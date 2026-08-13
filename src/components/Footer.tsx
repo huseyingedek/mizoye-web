@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
 import { navItems, siteConfig } from "@/lib/site";
 import Container from "./Container";
+import Logo from "./Logo";
 import {
   LinkedInIcon,
   TwitterIcon,
@@ -31,13 +32,9 @@ export default function Footer() {
       <Container className="py-14">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <Link href="/" className="flex items-center gap-2">
-              <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-brand-500 to-brand-700 text-sm font-black text-white">
-                M
-              </span>
-              <span className="text-lg font-bold text-white">
-                {t.brand.name}
-                <span className="text-brand-300"> {t.brand.suffix}</span>
+            <Link href="/" className="inline-flex" aria-label={t.brand.name}>
+              <span className="inline-flex rounded-xl bg-white px-3 py-2 shadow-sm">
+                <Logo className="h-9 w-auto" />
               </span>
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-slate-400">

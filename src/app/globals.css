@@ -48,6 +48,15 @@
   --color-gold-500: #e29812;
   --color-gold-600: #c07d0f;
 
+  /* Logo turuncusu — AI modülleri vurgusu */
+  --color-orange-50: #fdf1e7;
+  --color-orange-100: #fbdcc4;
+  --color-orange-200: #f6bd8f;
+  --color-orange-300: #f19a5a;
+  --color-orange-400: #ee8a3c;
+  --color-orange-500: #e8791e;
+  --color-orange-600: #cf6512;
+
   /* Geriye dönük uyumluluk için magenta tokenları lacivere eşlendi */
   --color-magenta-400: #17325f;
   --color-magenta-500: #0f1f3d;
@@ -99,6 +108,14 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+/* Tıklanabilir öğelerde el (pointer) imleci */
+button:not(:disabled),
+[role="button"]:not([aria-disabled="true"]),
+label[for],
+summary {
+  cursor: pointer;
 }
 
 body {
@@ -189,6 +206,15 @@ body {
       var(--color-gold-300) 55%,
       var(--color-gold-200)
     );
+  }
+
+  /* AI modül paneli — marka laciverdi + turuncu köşe parıltısı (modern) */
+  .bg-ai-panel {
+    background-color: #0a1730;
+    background-image:
+      radial-gradient(at 88% 12%, rgba(232, 121, 30, 0.3) 0px, transparent 46%),
+      radial-gradient(at 10% 100%, rgba(43, 140, 192, 0.28) 0px, transparent 50%),
+      linear-gradient(135deg, #0a1730 0%, #17325f 55%, #1f478d 100%);
   }
 
   /* Koyu lacivert kahraman zemini (dashboard vitrinleri için) */

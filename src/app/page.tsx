@@ -87,7 +87,7 @@ export default function HomePage() {
       {/* İstatistik şeridi */}
       <section className="relative">
         <Container>
-          <div className="relative z-10 -mt-14 grid grid-cols-2 gap-4 lg:grid-cols-4">
+          <div className="relative z-10 -mt-14 grid grid-cols-3 gap-3 sm:gap-4">
             {t.home.stats.map((stat, i) => {
               const a = accentOf(i);
               return (

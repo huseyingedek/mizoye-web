@@ -132,6 +132,12 @@ export default function ContactPage() {
                       </dd>
                     </div>
                   </div>
+                  <div>
+                    <dt className="text-slate-500">{t.company.taxTitle}</dt>
+                    <dd className="font-medium text-slate-900">
+                      {t.company.taxValue}
+                    </dd>
+                  </div>
                 </dl>
               </div>
 

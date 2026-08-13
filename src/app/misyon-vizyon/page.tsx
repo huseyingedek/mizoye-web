@@ -21,7 +21,7 @@ export default function MissionPage() {
         imageSrc={images.mission}
         imageAlt={t.mission.title}
         variant="photo"
-        chip={t.home.stats[3]}
+        chip={t.home.stats[2]}
         layout="center"
       />
 

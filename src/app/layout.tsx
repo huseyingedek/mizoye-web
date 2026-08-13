@@ -91,10 +91,14 @@ export default function RootLayout({
         foundingDate: "2025-12-16",
         address: {
           "@type": "PostalAddress",
-          addressLocality: "Yalova",
+          streetAddress:
+            "Kadıköy Beldesi Merkez Mahallesi Ahlat 9. Sk. No:14/1 D:1 Kopuzlar Sitesi",
+          addressLocality: "Merkez",
+          addressRegion: "Yalova",
           addressCountry: "TR",
-          postalCode: "77202",
+          postalCode: "77210",
         },
+        taxID: "6211252035",
         sameAs: [
           siteConfig.social.linkedin,
           siteConfig.social.twitter,

@@ -15,6 +15,7 @@ export const translations = {
       home: "Anasayfa",
       about: "Hakkımızda",
       solutions: "Çözümlerimiz",
+      ai: "AI Çözümleri",
       mission: "Misyon & Vizyon",
       contact: "İletişim",
       cta: "Teklif Alın",
@@ -33,31 +34,30 @@ export const translations = {
       stats: [
         { value: "120+", label: "Tamamlanan Proje" },
         { value: "50+", label: "Mutlu Kurumsal Müşteri" },
-        { value: "8+", label: "Yıllık Tecrübe" },
-        { value: "%99.9", label: "Sistem Erişilebilirliği" },
+        { value: "20+", label: "Yıllık Tecrübe" },
       ],
       solutionsTitle: "Yazılım ürünlerimiz ve hizmetlerimiz",
       solutionsSubtitle:
         "Kendi geliştirdiğimiz yazılım ürünleri ve uçtan uca yazılım & danışmanlık hizmetlerimizi tek bir çatı altında sunuyoruz.",
       whyTitle: "Neden Mizoye?",
       whySubtitle:
-        "Sadece kod yazmıyoruz; işinizi büyüten sürdürülebilir dijital ürünler tasarlıyoruz.",
+        "20+ yıldır, onlarca farklı sektörde ve ERP modülünde edindiğimiz derin tecrübeyi işletmeniz için ulaşılabilir kılıyoruz. Yazılım firmalarının değil, doğrudan müşterimizin çözüm ortağıyız.",
       why: [
         {
-          title: "Uzman Ekip",
-          text: "Alanında deneyimli yazılım mühendisleri, tasarımcılar ve danışmanlardan oluşan güçlü bir kadro.",
+          title: "Güçlü Ortaklık",
+          text: "Uzmanlığımızla sizin güçlü yanlarınızı daha da yukarılara taşımayı hedefliyoruz.",
         },
         {
-          title: "Ölçeklenebilir Mimari",
-          text: "Büyüyen iş hacminize uyum sağlayan, modern ve sağlam yazılım mimarileri kuruyoruz.",
+          title: "Ortak Akıl",
+          text: "Süreçleri bireysel kararlarla değil, şirketinizin dinamiklerine uygun ortak çözümlerle şekillendiriyoruz.",
         },
         {
-          title: "Şeffaf Süreç",
-          text: "Her aşamada net iletişim, düzenli raporlama ve öngörülebilir teslimat.",
+          title: "Risk Paylaşımı",
+          text: "Projenizin tüm operasyonel risklerini üstleniyor ve uçtan uca yanınızda yer alıyoruz.",
         },
         {
-          title: "7/24 Destek",
-          text: "Canlıya aldıktan sonra da yanınızdayız; kesintisiz bakım ve teknik destek.",
+          title: "Sürdürülebilirlik",
+          text: "Kısa vadeli çözümler yerine, uzun soluklu ve kalıcı bir iş birliği yapısı kuruyoruz.",
         },
       ],
       processTitle: "Çalışma Sürecimiz",
@@ -92,12 +92,12 @@ export const translations = {
       sectorsSubtitle:
         "Farklı sektörlerdeki işletmelerin ihtiyaçlarına uygun, esnek yazılım ve danışmanlık çözümleri sunuyoruz.",
       sectors: [
-        "Muhasebe & Finans",
-        "Lojistik & Depo",
+        "Gıda",
+        "Ofset",
+        "Ambalaj",
+        "Otomotiv",
+        "Makine",
         "Üretim & Sanayi",
-        "Perakende & E-ticaret",
-        "Sağlık",
-        "Kamu & Belediye",
       ],
       faqTitle: "Sıkça sorulan sorular",
       faqSubtitle: "Aklınıza takılanlar için kısa yanıtlar.",
@@ -167,10 +167,11 @@ export const translations = {
       products: [
         {
           title: "E-Mutabakat",
-          text: "Cari hesap ve BA/BS mutabakatlarınızı elektronik ortamda hızlı, güvenli ve otomatik yönetin; mutabakat sürecini saatlerden dakikalara indirin.",
+          text: "Cari hesap ve BA/BS mutabakatlarınızı elektronik ortamda hızlı, güvenli ve otomatik yönetin; ekstre karşılaştırma ile farkları anında görün, mutabakat sürecini saatlerden dakikalara indirin.",
           features: [
             "Otomatik mutabakat gönderimi",
             "Cari & BA/BS mutabakatı",
+            "Ekstre karşılaştırma (fark analizi)",
             "Takip, onay ve raporlama",
           ],
         },
@@ -206,6 +207,90 @@ export const translations = {
           title: "Entegrasyon & Dijital Dönüşüm",
           text: "Mevcut sistemlerinizi birbirine entegre eder, işletmenizi uçtan uca dijitale taşırız.",
           features: ["Sistem entegrasyonu", "API geliştirme", "Veri taşıma"],
+        },
+      ],
+      erpTitle: "Kurumsal ERP Çözümleri",
+      erpSubtitle:
+        "20+ yıllık ERP tecrübemizle doğru ERP seçimi, kurulum, uyarlama ve uçtan uca destek sağlıyoruz.",
+      erp: [
+        {
+          title: "Canias ERP",
+          text: "Üretimden finansa tüm iş süreçlerinizi tek platformda yöneten, esnek ve ölçeklenebilir kurumsal ERP çözümü. Kurulum, uyarlama, eğitim ve danışmanlık.",
+          features: ["Kurulum & uyarlama", "Modül danışmanlığı", "Eğitim & destek"],
+        },
+        {
+          title: "Uyumsoft",
+          text: "E-dönüşüm ve ERP süreçlerinizde uçtan uca Uyumsoft çözümleri; e-fatura, e-defter ve mevcut sistemlerinizle entegrasyon.",
+          features: ["E-Fatura & E-Defter", "ERP entegrasyonu", "E-dönüşüm danışmanlığı"],
+        },
+      ],
+      sectoralTitle: "Sektörel Yazılım Çözümleri",
+      sectoralSubtitle:
+        "Her sektörün kendine özgü ihtiyaçlarına uygun, sektöre özel yazılım çözümleri geliştiriyoruz.",
+      sectoral: [
+        { title: "Gıda", text: "Üretim, izlenebilirlik, reçete ve stok süreçlerine uygun çözümler." },
+        { title: "Ofset & Baskı", text: "Baskı iş emirleri, maliyetlendirme ve sipariş takibi." },
+        { title: "Ambalaj", text: "Reçete, üretim planlama ve sevkiyat yönetimi." },
+        { title: "Otomotiv", text: "Tedarik, yan sanayi ve kalite süreçleri için çözümler." },
+        { title: "Makine", text: "Proje bazlı üretim, servis ve bakım takibi." },
+      ],
+    },
+    ai: {
+      badge: "AI Çözümleri",
+      title: "AI & Makine Öğrenmesi",
+      lead: "Tahmin, sınıflandırma ve karar desteği ile operasyonel veriyi işe dönüştürüyoruz.",
+      introTitle: "Verinizi işe dönüştürün",
+      introText:
+        "20+ yıllık sektör ve ERP tecrübemizi yapay zeka ile birleştirerek; süreçlerinizi öngörülebilir, otomatik ve ölçülebilir hâle getiriyoruz. Var olan verinizi anlamlı kararlara dönüştürüyoruz.",
+      modulesTitle: "AI Çözümleri",
+      modulesSubtitle:
+        "Kurumsal operasyonlar için ölçülebilir sonuç üreten, iş akışına entegre yapay zeka modülleri.",
+      modules: [
+        {
+          code: "01",
+          title: "Öngörü ve Risk Skorlama",
+          text: "Saha ve süreç verilerini analiz ederek olası riskleri erken tespit eder, plansız duruşları azaltır.",
+          tags: ["Risk Skoru", "Erken Uyarı"],
+          bullets: [
+            "Kritik süreç ve ekipman risk skoru",
+            "Talep, stok ve tahsilat tahmini",
+            "Erken uyarı kuralları ve alarm akışı",
+            "Bakım ekipleri için aksiyon önerisi",
+          ],
+        },
+        {
+          code: "02",
+          title: "Otomasyon ve Öneri Sistemleri",
+          text: "Tekrarlayan kararları otomatikleştirir; işleri aciliyet ve kapasiteye göre sıralayarak planlamayı hızlandırır.",
+          tags: ["Otomasyon", "Akıllı Öneri"],
+          bullets: [
+            "Önceliklendirilmiş iş kuyruğu",
+            "Kapasite ve yük dengeleme",
+            "Süreç bazlı akıllı öneriler",
+            "ERP ile entegre çalışma",
+          ],
+        },
+        {
+          code: "03",
+          title: "Yönetici Karar Destek Paneli",
+          text: "KPI, risk ve performans metriklerini tek panelde birleştirerek karar süresini kısaltır.",
+          tags: ["Canlı KPI", "Trend Analizi"],
+          bullets: [
+            "Canlı performans ve risk metrikleri",
+            "Yönetici seviyesi özet içgörüler",
+            "Trend analizi ve öngörüsel raporlama",
+          ],
+        },
+        {
+          code: "04",
+          title: "Güvenlik, Denetim ve Uyum",
+          text: "Yapay zeka kullanımını rol bazlı erişim, denetim kayıtları ve şeffaf karar akışlarıyla güvence altına alır.",
+          tags: ["Audit Trail", "RBAC"],
+          bullets: [
+            "Denetim izi ve işlem geçmişi",
+            "Rol bazlı erişim yönetimi",
+            "Kurumsal veri güvenliği yaklaşımı",
+          ],
         },
       ],
     },
@@ -251,7 +336,7 @@ export const translations = {
       emailTitle: "E-posta",
       addressTitle: "Adres",
       addressValue:
-        "Kadıköy Beldesi Merkez Mah. Ahlat 9 Sok. Sit. No:14/1 İç Kapı No:1, Merkez, 77202 Yalova / Türkiye",
+        "Kadıköy Beldesi Merkez Mahallesi Ahlat 9. Sk. No:14/1 D:1 Kopuzlar Sitesi, 77210 Merkez, Yalova / Türkiye",
       hoursTitle: "Çalışma Saatleri",
       hoursValue: "Pazartesi – Cuma, 09:00 – 18:00",
       socialTitle: "Bizi takip edin",
@@ -273,6 +358,8 @@ export const translations = {
       type: "Tek Ortaklı Limited Şirket",
       foundedTitle: "Kuruluş Tarihi",
       founded: "16 Aralık 2025",
+      taxTitle: "Vergi Dairesi / No",
+      taxValue: "Yalova Vergi Dairesi — 6211252035",
       infoTitle: "Firma Bilgileri",
     },
     footer: {
@@ -297,6 +384,7 @@ export const translations = {
       home: "Home",
       about: "About Us",
       solutions: "Solutions",
+      ai: "AI Solutions",
       mission: "Mission & Vision",
       contact: "Contact",
       cta: "Get a Quote",
@@ -315,31 +403,30 @@ export const translations = {
       stats: [
         { value: "120+", label: "Completed Projects" },
         { value: "50+", label: "Happy Enterprise Clients" },
-        { value: "8+", label: "Years of Experience" },
-        { value: "99.9%", label: "System Uptime" },
+        { value: "20+", label: "Years of Experience" },
       ],
       solutionsTitle: "Our software products and services",
       solutionsSubtitle:
         "We bring our own software products together with end-to-end software & consulting services under a single roof.",
       whyTitle: "Why Mizoye?",
       whySubtitle:
-        "We don't just write code; we design sustainable digital products that grow your business.",
+        "For 20+ years we have made deep experience across dozens of industries and ERP modules accessible to your business. We are the solution partner of our client directly — not of software vendors.",
       why: [
         {
-          title: "Expert Team",
-          text: "A strong team of experienced software engineers, designers and consultants.",
+          title: "Strong Partnership",
+          text: "With our expertise, we aim to carry your strengths even higher.",
         },
         {
-          title: "Scalable Architecture",
-          text: "We build modern, robust software architectures that adapt to your growing workload.",
+          title: "Shared Thinking",
+          text: "We shape processes not with individual decisions, but with joint solutions suited to your company's dynamics.",
         },
         {
-          title: "Transparent Process",
-          text: "Clear communication, regular reporting and predictable delivery at every stage.",
+          title: "Shared Risk",
+          text: "We take on all the operational risks of your project and stand by you end to end.",
         },
         {
-          title: "24/7 Support",
-          text: "We stay by your side after launch with uninterrupted maintenance and technical support.",
+          title: "Sustainability",
+          text: "Instead of short-term fixes, we build a long-lasting, durable collaboration.",
         },
       ],
       processTitle: "Our Process",
@@ -374,12 +461,12 @@ export const translations = {
       sectorsSubtitle:
         "We deliver flexible software and consulting solutions tailored to the needs of businesses across different industries.",
       sectors: [
-        "Accounting & Finance",
-        "Logistics & Warehouse",
+        "Food",
+        "Offset Printing",
+        "Packaging",
+        "Automotive",
+        "Machinery",
         "Manufacturing & Industry",
-        "Retail & E-commerce",
-        "Healthcare",
-        "Public & Municipal",
       ],
       faqTitle: "Frequently asked questions",
       faqSubtitle: "Quick answers to what you may be wondering.",
@@ -449,10 +536,11 @@ export const translations = {
       products: [
         {
           title: "E-Reconciliation",
-          text: "Manage your current account and BA/BS reconciliations electronically — fast, secure and automated — cutting the process from hours to minutes.",
+          text: "Manage your current account and BA/BS reconciliations electronically — fast, secure and automated. Spot differences instantly with statement comparison and cut the process from hours to minutes.",
           features: [
             "Automated reconciliation dispatch",
             "Current & BA/BS reconciliation",
+            "Statement comparison (difference analysis)",
             "Tracking, approval and reporting",
           ],
         },
@@ -488,6 +576,90 @@ export const translations = {
           title: "Integration & Digital Transformation",
           text: "We integrate your existing systems and move your business to digital end to end.",
           features: ["System integration", "API development", "Data migration"],
+        },
+      ],
+      erpTitle: "Enterprise ERP Solutions",
+      erpSubtitle:
+        "With 20+ years of ERP experience, we handle the right ERP selection, setup, customization and end-to-end support.",
+      erp: [
+        {
+          title: "Canias ERP",
+          text: "A flexible, scalable enterprise ERP that manages all your business processes — from manufacturing to finance — on a single platform. Setup, customization, training and consulting.",
+          features: ["Setup & customization", "Module consulting", "Training & support"],
+        },
+        {
+          title: "Uyumsoft",
+          text: "End-to-end Uyumsoft solutions for your e-transformation and ERP processes; e-invoice, e-ledger and integration with your existing systems.",
+          features: ["E-Invoice & E-Ledger", "ERP integration", "E-transformation consulting"],
+        },
+      ],
+      sectoralTitle: "Industry-Specific Software Solutions",
+      sectoralSubtitle:
+        "We build software tailored to the unique needs of each industry.",
+      sectoral: [
+        { title: "Food", text: "Solutions for production, traceability, recipes and stock processes." },
+        { title: "Offset & Printing", text: "Print work orders, costing and order tracking." },
+        { title: "Packaging", text: "Recipes, production planning and shipping management." },
+        { title: "Automotive", text: "Solutions for supply, sub-industry and quality processes." },
+        { title: "Machinery", text: "Project-based production, service and maintenance tracking." },
+      ],
+    },
+    ai: {
+      badge: "AI Solutions",
+      title: "AI & Machine Learning",
+      lead: "We turn operational data into value with prediction, classification and decision support.",
+      introTitle: "Turn your data into value",
+      introText:
+        "By combining our 20+ years of industry and ERP experience with AI, we make your processes predictable, automated and measurable — turning existing data into meaningful decisions.",
+      modulesTitle: "AI Solutions",
+      modulesSubtitle:
+        "AI modules integrated into your workflow that produce measurable results for enterprise operations.",
+      modules: [
+        {
+          code: "01",
+          title: "Forecasting & Risk Scoring",
+          text: "Analyzes field and process data to detect potential risks early and reduce unplanned downtime.",
+          tags: ["Risk Score", "Early Warning"],
+          bullets: [
+            "Risk score for critical processes and equipment",
+            "Demand, stock and collection forecasting",
+            "Early-warning rules and alert flow",
+            "Action recommendations for maintenance teams",
+          ],
+        },
+        {
+          code: "02",
+          title: "Automation & Recommendation Systems",
+          text: "Automates repetitive decisions and speeds up planning by ordering work by urgency and capacity.",
+          tags: ["Automation", "Smart Suggestions"],
+          bullets: [
+            "Prioritized work queue",
+            "Capacity and load balancing",
+            "Process-based smart recommendations",
+            "Works integrated with your ERP",
+          ],
+        },
+        {
+          code: "03",
+          title: "Executive Decision Support Dashboard",
+          text: "Combines KPI, risk and performance metrics on a single panel to shorten decision time.",
+          tags: ["Live KPI", "Trend Analysis"],
+          bullets: [
+            "Live performance and risk metrics",
+            "Executive-level summary insights",
+            "Trend analysis and predictive reporting",
+          ],
+        },
+        {
+          code: "04",
+          title: "Security, Audit & Compliance",
+          text: "Secures AI usage with role-based access, audit logs and transparent decision flows.",
+          tags: ["Audit Trail", "RBAC"],
+          bullets: [
+            "Audit trail and operation history",
+            "Role-based access management",
+            "Enterprise data security approach",
+          ],
         },
       ],
     },
@@ -533,7 +705,7 @@ export const translations = {
       emailTitle: "Email",
       addressTitle: "Address",
       addressValue:
-        "Kadıköy Beldesi Merkez Mah. Ahlat 9 Sok. Sit. No:14/1 Int. Door No:1, Merkez, 77202 Yalova / Türkiye",
+        "Kadıköy Beldesi Merkez Mahallesi Ahlat 9. Sk. No:14/1 D:1 Kopuzlar Sitesi, 77210 Merkez, Yalova / Türkiye",
       hoursTitle: "Working Hours",
       hoursValue: "Monday – Friday, 09:00 – 18:00",
       socialTitle: "Follow us",
@@ -554,6 +726,8 @@ export const translations = {
       type: "Single-Shareholder Limited Company",
       foundedTitle: "Founded",
       founded: "16 December 2025",
+      taxTitle: "Tax Office / No",
+      taxValue: "Yalova Tax Office — 6211252035",
       infoTitle: "Company Details",
     },
     footer: {

@@ -57,6 +57,43 @@ export function CloudIcon(props: IconProps) {
   );
 }
 
+export function ShieldIcon(props: IconProps) {
+  return (
+    <svg {...base} {...props}>
+      <path d="M12 3l7 3v5c0 4.4-3 7.4-7 8.5C8 21.4 5 18.4 5 14V6z" />
+      <path d="m9 12 2 2 4-4" />
+    </svg>
+  );
+}
+
+export function ChartBarIcon(props: IconProps) {
+  return (
+    <svg {...base} {...props}>
+      <path d="M4 20V4M4 20h16" />
+      <path d="M8 20v-6M12 20V8M16 20v-9M20 20v-4" />
+    </svg>
+  );
+}
+
+export function AlertIcon(props: IconProps) {
+  return (
+    <svg {...base} {...props}>
+      <path d="M12 4 2.5 20h19z" />
+      <path d="M12 10v4M12 17.5h.01" />
+    </svg>
+  );
+}
+
+export function RouteIcon(props: IconProps) {
+  return (
+    <svg {...base} {...props}>
+      <circle cx="6" cy="19" r="2.5" />
+      <circle cx="18" cy="5" r="2.5" />
+      <path d="M8.5 19H14a3.5 3.5 0 0 0 0-7h-4a3.5 3.5 0 0 1 0-7h5.5" />
+    </svg>
+  );
+}
+
 export function DesignIcon(props: IconProps) {
   return (
     <svg {...base} {...props}>

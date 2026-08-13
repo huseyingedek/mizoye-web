@@ -7,6 +7,7 @@ import { useLanguage } from "@/context/LanguageContext";
 import { navItems } from "@/lib/site";
 import Container from "./Container";
 import LanguageSwitcher from "./LanguageSwitcher";
+import Logo from "./Logo";
 import { ArrowRightIcon } from "./Icons";
 
 export default function Navbar() {
@@ -33,14 +34,8 @@ export default function Navbar() {
       }`}
     >
       <Container className="flex h-16 items-center justify-between gap-4">
-        <Link href="/" className="flex items-center gap-2" aria-label="Mizoye">
-          <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-brand-600 to-brand-800 text-sm font-black text-white shadow-sm">
-            M
-          </span>
-          <span className="text-lg font-bold tracking-tight text-slate-900">
-            {t.brand.name}
-            <span className="text-brand-600">.</span>
-          </span>
+        <Link href="/" className="flex items-center" aria-label="Mizoye">
+          <Logo className="h-12 w-auto sm:h-[52px]" />
         </Link>
 
         {/* Masaüstü menü */}
