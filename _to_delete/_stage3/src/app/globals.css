@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+@theme {
+  /* Kurumsal ana renk — lacivert / mavi */
+  --color-brand-50: #eef3fb;
+  --color-brand-100: #d5e2f4;
+  --color-brand-200: #adc6e9;
+  --color-brand-300: #7ba1d9;
+  --color-brand-400: #4d7cc6;
+  --color-brand-500: #2d5bab;
+  --color-brand-600: #1f478d;
+  --color-brand-700: #1a3b74;
+  --color-brand-800: #17325f;
+  --color-brand-900: #132849;
+
+  /* Lacivert (koyu bölümler) */
+  --color-navy-800: #0f1f3d;
+  --color-navy-900: #0a1730;
+  --color-navy-950: #060f21;
+
+  /* İnce vurgu — çelik mavisi */
+  --color-accent-400: #4aa7d6;
+  --color-accent-500: #2b8cc0;
+  --color-accent-600: #1f6f9c;
+
+  /* Geriye dönük uyumluluk için magenta tokenları lacivere eşlendi */
+  --color-magenta-400: #17325f;
+  --color-magenta-500: #0f1f3d;
+
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+
+  --animate-fade-up: fade-up 0.6s ease-out both;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #0f1f3d;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: #334155;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+@layer utilities {
+  /* Kurumsal, iki tonlu ve okunaklı başlık vurgusu */
+  .text-gradient {
+    background-image: linear-gradient(
+      100deg,
+      var(--color-brand-700),
+      var(--color-accent-500)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  /* Sade, açık kurumsal arka plan dokusu */
+  .bg-hero-mesh {
+    background-color: #f7f9fc;
+    background-image:
+      radial-gradient(at 12% 0%, rgba(31, 71, 141, 0.08) 0px, transparent 55%),
+      radial-gradient(at 90% 8%, rgba(43, 140, 192, 0.07) 0px, transparent 50%);
+  }
+
+  .card-hover {
+    transition:
+      transform 0.25s ease,
+      box-shadow 0.25s ease,
+      border-color 0.25s ease;
+  }
+  .card-hover:hover {
+    transform: translateY(-4px);
+    border-color: var(--color-brand-300);
+    box-shadow: 0 18px 40px -22px rgba(15, 31, 61, 0.4);
+  }
+
+  /* Kurumsal ince gölge */
+  .shadow-card {
+    box-shadow: 0 1px 2px rgba(15, 31, 61, 0.04),
+      0 8px 24px -16px rgba(15, 31, 61, 0.25);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

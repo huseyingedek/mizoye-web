@@ -1,0 +1,265 @@
+@import "tailwindcss";
+
+@theme {
+  /* Kurumsal ana renk — lacivert / mavi */
+  --color-brand-50: #eef3fb;
+  --color-brand-100: #d5e2f4;
+  --color-brand-200: #adc6e9;
+  --color-brand-300: #7ba1d9;
+  --color-brand-400: #4d7cc6;
+  --color-brand-500: #2d5bab;
+  --color-brand-600: #1f478d;
+  --color-brand-700: #1a3b74;
+  --color-brand-800: #17325f;
+  --color-brand-900: #132849;
+
+  /* Lacivert (koyu bölümler) */
+  --color-navy-800: #0f1f3d;
+  --color-navy-900: #0a1730;
+  --color-navy-950: #060f21;
+
+  /* Canlı vurgu — çelik / turkuaz mavisi */
+  --color-accent-50: #e8f6fc;
+  --color-accent-100: #c8e9f6;
+  --color-accent-200: #92d3ec;
+  --color-accent-300: #5cbbdf;
+  --color-accent-400: #4aa7d6;
+  --color-accent-500: #2b8cc0;
+  --color-accent-600: #1f6f9c;
+
+  /* Canlılık için mor/menekşe vurgu */
+  --color-violet-50: #f1eefe;
+  --color-violet-100: #ddd5fb;
+  --color-violet-400: #8b6ef0;
+  --color-violet-500: #6d4de0;
+  --color-violet-600: #5a3bc4;
+
+  /* Canlılık için zümrüt vurgu */
+  --color-emerald-50: #e7f7ef;
+  --color-emerald-500: #10b981;
+  --color-emerald-600: #059669;
+
+  /* Marka vurgusu — altın / amber (logodaki sıcak ton) */
+  --color-gold-50: #fdf6e7;
+  --color-gold-100: #fbead0;
+  --color-gold-200: #f7d38f;
+  --color-gold-300: #f5c163;
+  --color-gold-400: #f0a91e;
+  --color-gold-500: #e29812;
+  --color-gold-600: #c07d0f;
+
+  /* Geriye dönük uyumluluk için magenta tokenları lacivere eşlendi */
+  --color-magenta-400: #17325f;
+  --color-magenta-500: #0f1f3d;
+
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+
+  --animate-fade-up: fade-up 0.6s ease-out both;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-float-slow: float 9s ease-in-out infinite;
+  --animate-float-slower: float 12s ease-in-out infinite;
+  --animate-shine: shine 2.6s ease-in-out infinite;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes shine {
+  0%,
+  100% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #0f1f3d;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* Yatay kaymayı engeller ama position: sticky (üst menü) çalışmaya devam eder.
+     Not: burada "hidden" KULLANMAYIN; sticky başlığı bozar. "clip" doğru olanıdır. */
+  overflow-x: clip;
+
+  /* Düz beyaz yerine — hafif, renkli çok noktalı zemin (tüm sayfalarda derinlik) */
+  background-color: #f4f7fd;
+  background-image:
+    radial-gradient(at 0% 0%, rgba(45, 91, 171, 0.1) 0px, transparent 45%),
+    radial-gradient(at 100% 5%, rgba(240, 169, 30, 0.09) 0px, transparent 40%),
+    radial-gradient(at 85% 100%, rgba(43, 140, 192, 0.1) 0px, transparent 45%),
+    radial-gradient(at 10% 90%, rgba(109, 77, 224, 0.07) 0px, transparent 42%);
+  background-attachment: fixed;
+  color: #334155;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+@layer utilities {
+  /* Kurumsal, iki tonlu ve okunaklı başlık vurgusu */
+  .text-gradient {
+    background-image: linear-gradient(
+      100deg,
+      var(--color-brand-700),
+      var(--color-accent-500)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  /* Sıcak altın vurgulu başlık gradyanı */
+  .text-gradient-gold {
+    background-image: linear-gradient(
+      100deg,
+      var(--color-brand-700) 15%,
+      var(--color-gold-400)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  /* Sade, açık kurumsal arka plan dokusu — ince altın sıcaklık eklendi */
+  .bg-hero-mesh {
+    background-color: #f7f9fc;
+    background-image:
+      radial-gradient(at 12% 0%, rgba(31, 71, 141, 0.09) 0px, transparent 55%),
+      radial-gradient(at 88% 4%, rgba(240, 169, 30, 0.1) 0px, transparent 46%),
+      radial-gradient(at 95% 60%, rgba(43, 140, 192, 0.07) 0px, transparent 50%);
+  }
+
+  /* Canlı çok renkli degrade (hero overlay / renkli bantlar) */
+  .bg-vivid {
+    background-image: linear-gradient(
+      130deg,
+      var(--color-brand-800) 0%,
+      var(--color-brand-600) 38%,
+      var(--color-accent-500) 72%,
+      var(--color-gold-400) 118%
+    );
+  }
+  .text-gradient-vivid {
+    background-image: linear-gradient(
+      100deg,
+      var(--color-accent-500),
+      var(--color-brand-600) 45%,
+      var(--color-gold-400)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  /* Renk blok bantları */
+  .bg-band-navy {
+    background-color: var(--color-navy-900);
+    background-image:
+      radial-gradient(at 15% 0%, rgba(45, 91, 171, 0.5) 0px, transparent 55%),
+      radial-gradient(at 90% 100%, rgba(240, 169, 30, 0.18) 0px, transparent 45%);
+  }
+  .bg-band-gold {
+    background-image: linear-gradient(
+      120deg,
+      var(--color-gold-400),
+      var(--color-gold-300) 55%,
+      var(--color-gold-200)
+    );
+  }
+
+  /* Koyu lacivert kahraman zemini (dashboard vitrinleri için) */
+  .bg-navy-mesh {
+    background-color: var(--color-navy-900);
+    background-image:
+      radial-gradient(at 15% 0%, rgba(45, 91, 171, 0.35) 0px, transparent 50%),
+      radial-gradient(at 85% 20%, rgba(240, 169, 30, 0.16) 0px, transparent 45%),
+      radial-gradient(at 60% 100%, rgba(43, 140, 192, 0.22) 0px, transparent 55%);
+  }
+
+  /* İnce nokta ızgarası (dekoratif) */
+  .bg-dotgrid {
+    background-image: radial-gradient(
+      circle at 1px 1px,
+      rgba(31, 71, 141, 0.14) 1px,
+      transparent 0
+    );
+    background-size: 22px 22px;
+  }
+
+  /* Yumuşak marka parıltısı */
+  .glow-brand {
+    box-shadow: 0 30px 60px -30px rgba(31, 71, 141, 0.5);
+  }
+  .glow-gold {
+    box-shadow: 0 24px 60px -26px rgba(240, 169, 30, 0.55);
+  }
+
+  .card-hover {
+    transition:
+      transform 0.25s ease,
+      box-shadow 0.25s ease,
+      border-color 0.25s ease;
+  }
+  .card-hover:hover {
+    transform: translateY(-4px);
+    border-color: var(--color-brand-300);
+    box-shadow: 0 18px 40px -22px rgba(15, 31, 61, 0.4);
+  }
+
+  /* Kurumsal ince gölge */
+  .shadow-card {
+    box-shadow: 0 1px 2px rgba(15, 31, 61, 0.04),
+      0 8px 24px -16px rgba(15, 31, 61, 0.25);
+  }
+
+  /* Kaydırınca yumuşak beliriş */
+  .reveal {
+    opacity: 0;
+    transform: translateY(26px);
+    transition:
+      opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+      transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
