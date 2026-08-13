@@ -41,7 +41,7 @@ export const translations = {
         "Kendi geliştirdiğimiz yazılım ürünleri ve uçtan uca yazılım & danışmanlık hizmetlerimizi tek bir çatı altında sunuyoruz.",
       whyTitle: "Neden Mizoye?",
       whySubtitle:
-        "20+ yıldır, onlarca farklı sektörde ve ERP modülünde edindiğimiz derin tecrübeyi işletmeniz için ulaşılabilir kılıyoruz. Yazılım firmalarının değil, doğrudan müşterimizin çözüm ortağıyız.",
+        "20 yıldan fazla, onlarca farklı sektörde ve ERP modülünde edindiğimiz derin tecrübeyi işletmeniz için ulaşılabilir kılıyoruz. Yazılım firmalarının değil, doğrudan müşterimizin çözüm ortağıyız.",
       why: [
         {
           title: "Güçlü Ortaklık",
@@ -58,6 +58,27 @@ export const translations = {
         {
           title: "Sürdürülebilirlik",
           text: "Kısa vadeli çözümler yerine, uzun soluklu ve kalıcı bir iş birliği yapısı kuruyoruz.",
+        },
+      ],
+      assurancesTitle: "Üstlendiğimiz Sorumluluklar ve Güvenceler",
+      assurancesSubtitle:
+        "Canlıya aldığımız ve sürdürülebilirlik desteği verdiğimiz firmalardaki başarı modelimizden yola çıkarak, projenizde şu sorumlulukları tamamen Mizoye olarak üstleniyoruz:",
+      assurances: [
+        {
+          title: "Süreklilik Garantisi",
+          text: "ERP projesinde görev alacak personelin seçimi, yönetimi ve sürekliliği bizim sorumluluğumuzdadır.",
+        },
+        {
+          title: "Kesintisiz Destek",
+          text: "İzin, rapor veya işten ayrılma durumlarında süreçleriniz asla aksamaz. Yedek kadrolarımız anında devreye girer.",
+        },
+        {
+          title: "Eğitim ve Modernizasyon",
+          text: "İlerleyen yıllarda ekibinize katılacak yeni personelin eğitimleri ve iş süreçlerinizin çağdaş trendlere göre modernizasyonu tarafımızca sağlanır.",
+        },
+        {
+          title: "Gelişim Odağı",
+          text: "ERP’nin firmanızda en etkin şekilde kullanılabilmesi için uzun yıllar el birliğiyle çalışmayı taahhüt ediyoruz.",
         },
       ],
       processTitle: "Çalışma Sürecimiz",
@@ -410,7 +431,7 @@ export const translations = {
         "We bring our own software products together with end-to-end software & consulting services under a single roof.",
       whyTitle: "Why Mizoye?",
       whySubtitle:
-        "For 20+ years we have made deep experience across dozens of industries and ERP modules accessible to your business. We are the solution partner of our client directly — not of software vendors.",
+        "For more than 20 years we have made deep experience across dozens of industries and ERP modules accessible to your business. We are the solution partner of our client directly — not of software vendors.",
       why: [
         {
           title: "Strong Partnership",
@@ -427,6 +448,27 @@ export const translations = {
         {
           title: "Sustainability",
           text: "Instead of short-term fixes, we build a long-lasting, durable collaboration.",
+        },
+      ],
+      assurancesTitle: "Responsibilities & Assurances We Take On",
+      assurancesSubtitle:
+        "Drawing on the success model from the companies we've taken live and support long-term, we take on the following responsibilities entirely as Mizoye:",
+      assurances: [
+        {
+          title: "Continuity Guarantee",
+          text: "Selecting, managing and ensuring the continuity of the personnel working on the ERP project is our responsibility.",
+        },
+        {
+          title: "Uninterrupted Support",
+          text: "Your processes never stall due to leave, reports or resignations. Our backup teams step in immediately.",
+        },
+        {
+          title: "Training & Modernization",
+          text: "We provide training for new personnel joining your team over the years and modernize your business processes in line with contemporary trends.",
+        },
+        {
+          title: "Focus on Growth",
+          text: "We commit to working hand in hand for years so that the ERP is used most effectively in your company.",
         },
       ],
       processTitle: "Our Process",

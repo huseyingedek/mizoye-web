@@ -10,7 +10,7 @@ import Reveal from "@/components/Reveal";
 import { images } from "@/lib/site";
 import { solutionIcons, productIcons } from "@/components/solutionIcons";
 import { accentOf } from "@/lib/accents";
-import { CheckIcon, ArrowRightIcon } from "@/components/Icons";
+import { CheckIcon, ArrowRightIcon, ShieldIcon } from "@/components/Icons";
 
 export default function HomePage() {
   const { t } = useLanguage();
@@ -330,6 +330,44 @@ export default function HomePage() {
                   <p className="mt-2 text-sm leading-relaxed text-slate-600">
                     {item.text}
                   </p>
+                </Reveal>
+              );
+            })}
+          </div>
+        </Container>
+      </section>
+
+      {/* Sorumluluklar ve Güvenceler */}
+      <section className="border-t border-slate-200 py-20 sm:py-24">
+        <Container>
+          <Reveal>
+            <SectionHeading
+              title={t.home.assurancesTitle}
+              subtitle={t.home.assurancesSubtitle}
+            />
+          </Reveal>
+          <div className="mt-14 grid gap-6 md:grid-cols-2">
+            {t.home.assurances.map((item, i) => {
+              const a = accentOf(i);
+              return (
+                <Reveal
+                  key={item.title}
+                  delay={(i % 2) * 100}
+                  className={`card-hover flex gap-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-card ${a.bar} ${a.hover}`}
+                >
+                  <span
+                    className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-xl text-white shadow-sm ${a.icon}`}
+                  >
+                    <ShieldIcon className="h-6 w-6" />
+                  </span>
+                  <div>
+                    <h3 className="text-lg font-bold text-slate-900">
+                      {item.title}
+                    </h3>
+                    <p className="mt-2 text-sm leading-relaxed text-slate-600">
+                      {item.text}
+                    </p>
+                  </div>
                 </Reveal>
               );
             })}
