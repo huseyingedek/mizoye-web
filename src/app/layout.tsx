@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import { siteConfig } from "@/lib/site";
 
 const description =
-  "Mizoye Yazılım Danışmanlık; E-Mutabakat ve Depo Yönetim Sistemi (WMS) gibi kendi yazılım ürünleri ile özel yazılım geliştirme ve teknoloji danışmanlığı hizmetleri sunan bir yazılım şirketidir.";
+  "Mizoye Yazılım Danışmanlık; E-Mutabakat, Depo Yönetim Sistemi (WMS), Canias ERP, Uyumsoft ve Liox ERP danışmanlığı ile özel yazılım geliştirme, yapay zeka (AI) çözümleri ve teknoloji danışmanlığı sunan bir yazılım şirketidir.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -22,12 +22,24 @@ export const metadata: Metadata = {
   publisher: "Mizoye Yazılım Danışmanlık",
   keywords: [
     "Mizoye",
+    "Canias",
+    "Canias ERP",
+    "Canias ERP danışmanlık",
+    "CaniasERP",
+    "ERP",
+    "ERP danışmanlık",
+    "Uyumsoft",
+    "Liox",
+    "E-Mutabakat",
+    "mutabakat",
+    "mutabakat programı",
+    "Depo Yönetim",
+    "Depo Yönetim Sistemi",
+    "WMS",
+    "AI Çözümleri",
+    "yapay zeka",
     "yazılım şirketi",
     "yazılım danışmanlık",
-    "E-Mutabakat",
-    "mutabakat programı",
-    "depo yönetim sistemi",
-    "WMS",
     "özel yazılım geliştirme",
     "web geliştirme",
     "mobil uygulama",

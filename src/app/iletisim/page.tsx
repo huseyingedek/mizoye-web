@@ -11,7 +11,6 @@ import {
   MailIcon,
   MapPinIcon,
   ClockIcon,
-  BuildingIcon,
   LinkedInIcon,
   TwitterIcon,
   InstagramIcon,
@@ -100,46 +99,6 @@ export default function ContactPage() {
                   </li>
                 ))}
               </ul>
-
-              {/* Firma bilgileri */}
-              <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-card">
-                <div className="flex items-center gap-2.5">
-                  <BuildingIcon className="h-5 w-5 text-brand-600" />
-                  <h3 className="text-sm font-semibold uppercase tracking-wider text-slate-500">
-                    {t.company.infoTitle}
-                  </h3>
-                </div>
-                <dl className="mt-4 space-y-3 text-sm">
-                  <div>
-                    <dt className="text-slate-500">{t.company.nameTitle}</dt>
-                    <dd className="font-medium text-slate-900">
-                      {t.company.legalName}
-                    </dd>
-                  </div>
-                  <div className="grid grid-cols-2 gap-4">
-                    <div>
-                      <dt className="text-slate-500">{t.company.typeTitle}</dt>
-                      <dd className="font-medium text-slate-900">
-                        {t.company.type}
-                      </dd>
-                    </div>
-                    <div>
-                      <dt className="text-slate-500">
-                        {t.company.foundedTitle}
-                      </dt>
-                      <dd className="font-medium text-slate-900">
-                        {t.company.founded}
-                      </dd>
-                    </div>
-                  </div>
-                  <div>
-                    <dt className="text-slate-500">{t.company.taxTitle}</dt>
-                    <dd className="font-medium text-slate-900">
-                      {t.company.taxValue}
-                    </dd>
-                  </div>
-                </dl>
-              </div>
 
               {/* Sosyal medya */}
               <div>
