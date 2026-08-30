@@ -16,6 +16,7 @@ export const translations = {
       about: "Hakkımızda",
       solutions: "Çözümlerimiz",
       ai: "AI Çözümleri",
+      erp: "ERP Danışmanlığı",
       mission: "Misyon & Vizyon",
       contact: "İletişim",
       cta: "Teklif Alın",
@@ -372,6 +373,83 @@ export const translations = {
       formNote:
         "Gönder’e tıkladığınızda mesajınız varsayılan e-posta uygulamanızda hazırlanır.",
     },
+    erpConsulting: {
+      badge: "ERP Danışmanlığı",
+      title: "ERP'nizi birlikte seçelim, birlikte uyarlayalım",
+      lead: "20 yılı aşkın süredir 20 farklı sektörden işletmenin ERP yolculuğunda yanındayız. Bu birikimi masaya yatırıyor, işletmenizin gerçek ihtiyaçlarını sizinle birlikte değerlendirerek doğru sistemi seçiyor, size özel şekilde yapılandırıyoruz.",
+      stats: [
+        { value: "20+", label: "Yıl ERP Tecrübesi" },
+        { value: "20", label: "Farklı Sektör" },
+        { value: "4", label: "ERP Platformu" },
+      ],
+      intro: {
+        title: "Hazır reçete değil, ortaklık",
+        paragraphs: [
+          "Mizoye Yazılım Danışmanlık Ltd. Şti. olarak, 20 yılı aşkın süredir 20 farklı sektörden işletmenin ERP yolculuğunda yanında olduk. Bu birikimi masaya yatırıyor, işletmenizin gerçek ihtiyaçlarını sizinle birlikte değerlendirerek doğru sistemi seçiyor, size özel şekilde yapılandırıyoruz.",
+          "Hazır reçetelerle değil, sektörünüzü ve iş modelinizi gerçekten tanıyan bir ortaklık anlayışıyla çalışıyoruz. Amacımız size bir yazılım kurmak değil; birlikte doğru kararı verip, işinize uzun vadede değer katacak bir sistemi birlikte inşa etmek.",
+        ],
+      },
+      experience: {
+        title: "Tecrübemiz",
+        paragraphs: [
+          "20 yılı aşkın süredir üretim, perakende, lojistik, dağıtım ve finans başta olmak üzere 20 farklı sektörden işletmeye ERP danışmanlığı verdik. Bu süreçte hem küresel ölçekli kurumsal projelerde hem de KOBİ'lerin dijitalleşme yolculuğunda aktif rol aldık. Tecrübemiz; ihtiyaç analizinden sistem seçimine, kurulumdan veri göçüne, kullanıcı eğitiminden canlıya geçiş sonrası desteğe kadar ERP projesinin tüm yaşam döngüsünü kapsıyor.",
+          "Yirmi yılı aşan bu saha tecrübesi sayesinde, projelerde en sık karşılaşılan riskleri önceden öngörebiliyor, bütçe ve zaman planlamasını gerçekçi verilere dayandırıyor ve sektörden sektöre farklılaşan süreçleri standart ERP modülleriyle uyumlu hale getirebiliyoruz. Farklı sektörlerden edindiğimiz bu geniş perspektif, sizin sektörünüze özgü ince detayları da gözden kaçırmadan doğru çözümü birlikte belirlememizi sağlıyor.",
+        ],
+      },
+      expertise: {
+        title: "Uzmanlık Alanlarımız",
+        subtitle: "Farklı ölçek ve ihtiyaçtaki işletmelere yönelik başlıca ERP platformlarında derinlemesine tecrübeye sahibiz.",
+        platformsTitle: "ERP Platformları",
+        platforms: [
+          { name: "Canias ERP", text: "Üretimden finansa uçtan uca süreçleri yöneten, esnek ve ölçeklenebilir kurumsal ERP." },
+          { name: "Odoo", text: "Modüler yapısıyla hızlı uyarlanabilen, büyümeye açık bütünleşik iş yönetimi platformu." },
+          { name: "Liox ERP", text: "İşletmelerin operasyonel süreçlerini tek çatı altında toplayan bütünleşik ERP çözümü." },
+          { name: "IFS", text: "Varlık, servis ve saha yönetiminde güçlü, kurumsal ölçekli ERP platformu." },
+        ],
+        modulesTitle: "Modül Tecrübemiz",
+        modulesIntro: "Modül bazında derinlemesine proje tecrübemiz bulunuyor:",
+        modules: [
+          "Finans & Muhasebe",
+          "Tedarik Zinciri Yönetimi",
+          "Üretim Planlama",
+          "Stok & Depo Yönetimi",
+          "Satış & Dağıtım",
+          "İnsan Kaynakları",
+          "Raporlama & İş Zekası",
+        ],
+        partnerNote: "canias, Odoo, Liox ve IFS'te partner firmalarımızla ortak çalışıyoruz; ERP seçiminizde bu platformlardan biri öne çıkarsa süreci birlikte yürütüyoruz.",
+      },
+      services: {
+        title: "Sunduğumuz Hizmetler",
+        subtitle: "İster ERP seçiminizde veya proje yönetiminde yanınızda olalım, isterseniz tüm süreci baştan sona bizimle birlikte yürütün.",
+        items: [
+          { title: "ERP Danışmanlığı", text: "ERP'nizi satın aldıysanız, danışmanlığını üstlenip projenizi canlıya alıyoruz." },
+          { title: "ERP Seçim Danışmanlığı", text: "İşletmenize en uygun ERP sistemini seçme sürecinde yanınızda oluyoruz." },
+          { title: "Proje Yöneticiliği", text: "Seçtiğiniz herhangi bir ERP'de proje yöneticiliği yapıyoruz. Programa biz dokunmuyoruz; karşımızdaki ERP firmasının danışmanlık ekibiyle birlikte, adeta sizin ERP ekibinizmiş gibi çalışıyoruz." },
+          { title: "Canlı Sonrası Destek", text: "Canlıya geçmiş projelerinize destek veriyor, sürdürülebilirliğini ve süreçlerinizin aktif çalışmasını sağlıyoruz." },
+        ],
+      },
+      approach: {
+        title: "Çalışma Yaklaşımımız",
+        subtitle: "Her ERP projesine, işletmenin kendine özgü dinamiklerini merkeze alan bir yaklaşımla başlıyoruz.",
+        steps: [
+          { step: "01", title: "Mevcut Durum Analizi", text: "Süreçlerinizi ve ihtiyaçlarınızı detaylı biçimde analiz ederek işin gerçek resmini birlikte çıkarıyoruz." },
+          { step: "02", title: "Yol Haritası & Planlama", text: "Net bir yol haritası ile gerçekçi bir zaman ve bütçe planı oluşturuyoruz." },
+          { step: "03", title: "Uygulama & Şeffaf İletişim", text: "Düzenli geri bildirim döngüleriyle şeffaf iletişim sürdürüyor, projeyi adım adım sizinle birlikte ilerletiyoruz." },
+          { step: "04", title: "Canlı Sonrası Sahiplenme", text: "Canlıya geçişten sonra sürecin sahiplenilmesini sağlayacak destek ve takip mekanizmalarını devreye alıyoruz." },
+        ],
+      },
+      why: {
+        title: "Neden Bizi Tercih Etmelisiniz?",
+        subtitle: "Alanında tecrübeli ekibimiz, sektörünüze özgü riskleri ve fırsatları önceden görebilme yeteneğine sahiptir.",
+        points: [
+          { title: "Sektörel Öngörü", text: "Sektörünüze özgü riskleri ve fırsatları projeler başlamadan önce görebiliyoruz." },
+          { title: "Şeffaf İletişim", text: "Düzenli geri bildirim ve açık iletişimle sürecin her aşamasında yanınızdayız." },
+          { title: "Gerçekçi Planlama", text: "Zaman ve bütçeyi gerçek verilere dayandırıyor, projeyi zamanında tamamlıyoruz." },
+          { title: "Doğru ve Sade Çözüm", text: "Gereksiz karmaşıklığa girmeden, bütçenizi gözeterek size en uygun çözümü sunuyoruz." },
+        ],
+      },
+    },
     company: {
       legalName: "Mizoye Yazılım Danışmanlık Limited Şirketi",
       nameTitle: "Ünvan",
@@ -406,6 +484,7 @@ export const translations = {
       about: "About Us",
       solutions: "Solutions",
       ai: "AI Solutions",
+      erp: "ERP Consulting",
       mission: "Mission & Vision",
       contact: "Contact",
       cta: "Get a Quote",
@@ -760,6 +839,83 @@ export const translations = {
       formSend: "Send Message",
       formNote:
         "When you click Send, your message opens in your default email app.",
+    },
+    erpConsulting: {
+      badge: "ERP Consulting",
+      title: "Let's choose your ERP together, and tailor it together",
+      lead: "For more than 20 years we have supported businesses from 20 different sectors on their ERP journey. We bring that experience to the table, evaluate your real needs together with you, choose the right system and configure it specifically for you.",
+      stats: [
+        { value: "20+", label: "Years of ERP Experience" },
+        { value: "20", label: "Different Sectors" },
+        { value: "4", label: "ERP Platforms" },
+      ],
+      intro: {
+        title: "A partnership, not a ready-made recipe",
+        paragraphs: [
+          "As Mizoye Yazılım Danışmanlık Ltd. Şti., we have stood beside businesses from 20 different sectors on their ERP journey for over 20 years. We bring this experience to the table, evaluate your real needs together with you, choose the right system and configure it specifically for you.",
+          "We do not work with off-the-shelf recipes, but with a partnership mindset that truly understands your sector and business model. Our goal is not simply to install software for you; it is to make the right decision together and build a system that adds long-term value to your business.",
+        ],
+      },
+      experience: {
+        title: "Our Experience",
+        paragraphs: [
+          "For over 20 years we have provided ERP consulting to businesses from 20 different sectors, primarily manufacturing, retail, logistics, distribution and finance. Throughout this time we have taken an active role both in globally scaled enterprise projects and in the digitalization journeys of SMEs. Our experience spans the entire ERP project life cycle — from needs analysis to system selection, from implementation to data migration, and from user training to post go-live support.",
+          "Thanks to this field experience of more than twenty years, we can foresee the most common project risks in advance, base budget and time planning on realistic data, and align processes that differ from sector to sector with standard ERP modules. This broad perspective, gained from many different sectors, lets us determine the right solution together without overlooking the fine details specific to your sector.",
+        ],
+      },
+      expertise: {
+        title: "Our Areas of Expertise",
+        subtitle: "We have deep experience in the leading ERP platforms for businesses of different scales and needs.",
+        platformsTitle: "ERP Platforms",
+        platforms: [
+          { name: "Canias ERP", text: "A flexible, scalable enterprise ERP that manages end-to-end processes from production to finance." },
+          { name: "Odoo", text: "A modular, integrated business management platform that adapts quickly and scales with growth." },
+          { name: "Liox ERP", text: "An integrated ERP solution that brings operational processes together under one roof." },
+          { name: "IFS", text: "An enterprise-scale ERP platform, strong in asset, service and field management." },
+        ],
+        modulesTitle: "Our Module Experience",
+        modulesIntro: "We have in-depth project experience at the module level:",
+        modules: [
+          "Finance & Accounting",
+          "Supply Chain Management",
+          "Production Planning",
+          "Inventory & Warehouse Management",
+          "Sales & Distribution",
+          "Human Resources",
+          "Reporting & Business Intelligence",
+        ],
+        partnerNote: "We work together with our partner firms on canias, Odoo, Liox and IFS; if one of these platforms stands out in your ERP selection, we run the process with you.",
+      },
+      services: {
+        title: "The Services We Offer",
+        subtitle: "Whether we stand beside you for your ERP selection or project management, or you run the entire process with us from start to finish.",
+        items: [
+          { title: "ERP Consulting", text: "If you have already purchased your ERP, we take on its consulting and bring your project live." },
+          { title: "ERP Selection Consulting", text: "We stand beside you throughout the process of selecting the ERP system best suited to your business." },
+          { title: "Project Management", text: "We provide project management for any ERP you choose. We do not touch the software ourselves; we work alongside the consulting team of the ERP vendor, almost as if we were your own ERP team." },
+          { title: "Post Go-Live Support", text: "We support your projects that have gone live, ensuring their sustainability and keeping your processes actively running." },
+        ],
+      },
+      approach: {
+        title: "Our Working Approach",
+        subtitle: "We start every ERP project with an approach that puts the business's own unique dynamics at the center.",
+        steps: [
+          { step: "01", title: "Current State Analysis", text: "We analyze your processes and needs in detail and draw the real picture of the work together." },
+          { step: "02", title: "Roadmap & Planning", text: "We create a clear roadmap along with a realistic time and budget plan." },
+          { step: "03", title: "Implementation & Transparency", text: "We maintain transparent communication through regular feedback loops and advance the project step by step with you." },
+          { step: "04", title: "Post Go-Live Ownership", text: "After go-live, we activate the support and follow-up mechanisms that ensure the process is owned and sustained." },
+        ],
+      },
+      why: {
+        title: "Why Choose Us?",
+        subtitle: "Our experienced team has the ability to foresee the risks and opportunities specific to your sector in advance.",
+        points: [
+          { title: "Sector Foresight", text: "We can see the risks and opportunities specific to your sector before projects even begin." },
+          { title: "Transparent Communication", text: "With regular feedback and open communication, we are with you at every stage of the process." },
+          { title: "Realistic Planning", text: "We base time and budget on real data and complete the project on schedule." },
+          { title: "Right & Simple Solution", text: "We offer the solution that is right for you without unnecessary complexity, while respecting your budget." },
+        ],
+      },
     },
     company: {
       legalName: "Mizoye Yazılım Danışmanlık Limited Şirketi",

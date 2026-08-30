@@ -52,6 +52,7 @@ export const navItems: NavItem[] = [
   { href: "/", key: "home" },
   { href: "/hakkimizda", key: "about" },
   { href: "/cozumler", key: "solutions" },
+  { href: "/erp-danismanligi", key: "erp" },
   { href: "/yapay-zeka", key: "ai" },
   { href: "/misyon-vizyon", key: "mission" },
   { href: "/iletisim", key: "contact" },
