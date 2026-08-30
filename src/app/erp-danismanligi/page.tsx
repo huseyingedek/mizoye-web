@@ -234,44 +234,6 @@ export default function ErpConsultingPage() {
         </Container>
       </section>
 
-      {/* Neden Mizoye? (ana sayfadaki bölüm) */}
-      <section className="bg-hero-mesh py-16 sm:py-20">
-        <Container>
-          <Reveal>
-            <SectionHeading
-              align="left"
-              badge={t.home.whyTitle}
-              title={t.home.whyTitle}
-              subtitle={t.home.whySubtitle}
-            />
-          </Reveal>
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {t.home.why.map((item, i) => {
-              const a = accentOf(i);
-              return (
-                <Reveal
-                  key={item.title}
-                  delay={(i % 4) * 80}
-                  className={`card-hover rounded-2xl border border-slate-200 bg-white p-6 shadow-card ${a.bar} ${a.hover}`}
-                >
-                  <div
-                    className={`flex h-11 w-11 items-center justify-center rounded-xl text-white shadow-sm ${a.icon}`}
-                  >
-                    <CheckIcon className="h-5 w-5" />
-                  </div>
-                  <h3 className="mt-4 text-base font-bold text-slate-900">
-                    {item.title}
-                  </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-slate-600">
-                    {item.text}
-                  </p>
-                </Reveal>
-              );
-            })}
-          </div>
-        </Container>
-      </section>
-
       {/* CTA */}
       <section className="py-20">
         <Container>
