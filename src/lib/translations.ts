@@ -231,21 +231,6 @@ export const translations = {
           features: ["Sistem entegrasyonu", "API geliştirme", "Veri taşıma"],
         },
       ],
-      erpTitle: "Kurumsal ERP Çözümleri",
-      erpSubtitle:
-        "20+ yıllık ERP tecrübemizle doğru ERP seçimi, kurulum, uyarlama ve uçtan uca destek sağlıyoruz.",
-      erp: [
-        {
-          title: "Canias ERP",
-          text: "Üretimden finansa tüm iş süreçlerinizi tek platformda yöneten, esnek ve ölçeklenebilir kurumsal ERP çözümü. Kurulum, uyarlama, eğitim ve danışmanlık.",
-          features: ["Kurulum & uyarlama", "Modül danışmanlığı", "Eğitim & destek"],
-        },
-        {
-          title: "Uyumsoft",
-          text: "E-dönüşüm ve ERP süreçlerinizde uçtan uca Uyumsoft çözümleri; e-fatura, e-defter ve mevcut sistemlerinizle entegrasyon.",
-          features: ["E-Fatura & E-Defter", "ERP entegrasyonu", "E-dönüşüm danışmanlığı"],
-        },
-      ],
       sectoralTitle: "Sektörel Yazılım Çözümleri",
       sectoralSubtitle:
         "Her sektörün kendine özgü ihtiyaçlarına uygun, sektöre özel yazılım çözümleri geliştiriyoruz.",
@@ -436,16 +421,6 @@ export const translations = {
           { step: "02", title: "Yol Haritası & Planlama", text: "Net bir yol haritası ile gerçekçi bir zaman ve bütçe planı oluşturuyoruz." },
           { step: "03", title: "Uygulama & Şeffaf İletişim", text: "Düzenli geri bildirim döngüleriyle şeffaf iletişim sürdürüyor, projeyi adım adım sizinle birlikte ilerletiyoruz." },
           { step: "04", title: "Canlı Sonrası Sahiplenme", text: "Canlıya geçişten sonra sürecin sahiplenilmesini sağlayacak destek ve takip mekanizmalarını devreye alıyoruz." },
-        ],
-      },
-      why: {
-        title: "Neden Bizi Tercih Etmelisiniz?",
-        subtitle: "Alanında tecrübeli ekibimiz, sektörünüze özgü riskleri ve fırsatları önceden görebilme yeteneğine sahiptir.",
-        points: [
-          { title: "Sektörel Öngörü", text: "Sektörünüze özgü riskleri ve fırsatları projeler başlamadan önce görebiliyoruz." },
-          { title: "Şeffaf İletişim", text: "Düzenli geri bildirim ve açık iletişimle sürecin her aşamasında yanınızdayız." },
-          { title: "Gerçekçi Planlama", text: "Zaman ve bütçeyi gerçek verilere dayandırıyor, projeyi zamanında tamamlıyoruz." },
-          { title: "Doğru ve Sade Çözüm", text: "Gereksiz karmaşıklığa girmeden, bütçenizi gözeterek size en uygun çözümü sunuyoruz." },
         ],
       },
     },
@@ -698,21 +673,6 @@ export const translations = {
           features: ["System integration", "API development", "Data migration"],
         },
       ],
-      erpTitle: "Enterprise ERP Solutions",
-      erpSubtitle:
-        "With 20+ years of ERP experience, we handle the right ERP selection, setup, customization and end-to-end support.",
-      erp: [
-        {
-          title: "Canias ERP",
-          text: "A flexible, scalable enterprise ERP that manages all your business processes — from manufacturing to finance — on a single platform. Setup, customization, training and consulting.",
-          features: ["Setup & customization", "Module consulting", "Training & support"],
-        },
-        {
-          title: "Uyumsoft",
-          text: "End-to-end Uyumsoft solutions for your e-transformation and ERP processes; e-invoice, e-ledger and integration with your existing systems.",
-          features: ["E-Invoice & E-Ledger", "ERP integration", "E-transformation consulting"],
-        },
-      ],
       sectoralTitle: "Industry-Specific Software Solutions",
       sectoralSubtitle:
         "We build software tailored to the unique needs of each industry.",
@@ -902,16 +862,6 @@ export const translations = {
           { step: "02", title: "Roadmap & Planning", text: "We create a clear roadmap along with a realistic time and budget plan." },
           { step: "03", title: "Implementation & Transparency", text: "We maintain transparent communication through regular feedback loops and advance the project step by step with you." },
           { step: "04", title: "Post Go-Live Ownership", text: "After go-live, we activate the support and follow-up mechanisms that ensure the process is owned and sustained." },
-        ],
-      },
-      why: {
-        title: "Why Choose Us?",
-        subtitle: "Our experienced team has the ability to foresee the risks and opportunities specific to your sector in advance.",
-        points: [
-          { title: "Sector Foresight", text: "We can see the risks and opportunities specific to your sector before projects even begin." },
-          { title: "Transparent Communication", text: "With regular feedback and open communication, we are with you at every stage of the process." },
-          { title: "Realistic Planning", text: "We base time and budget on real data and complete the project on schedule." },
-          { title: "Right & Simple Solution", text: "We offer the solution that is right for you without unnecessary complexity, while respecting your budget." },
         ],
       },
     },

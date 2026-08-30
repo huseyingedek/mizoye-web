@@ -234,38 +234,37 @@ export default function ErpConsultingPage() {
         </Container>
       </section>
 
-      {/* Neden Bizi Tercih Etmelisiniz */}
+      {/* Neden Mizoye? (ana sayfadaki bölüm) */}
       <section className="bg-hero-mesh py-16 sm:py-20">
         <Container>
           <Reveal>
             <SectionHeading
               align="left"
-              title={e.why.title}
-              subtitle={e.why.subtitle}
+              badge={t.home.whyTitle}
+              title={t.home.whyTitle}
+              subtitle={t.home.whySubtitle}
             />
           </Reveal>
-          <div className="mt-12 grid gap-6 sm:grid-cols-2">
-            {e.why.points.map((p, i) => {
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {t.home.why.map((item, i) => {
               const a = accentOf(i);
               return (
                 <Reveal
-                  key={p.title}
-                  delay={(i % 2) * 100}
-                  className={`flex gap-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-card ${a.hover}`}
+                  key={item.title}
+                  delay={(i % 4) * 80}
+                  className={`card-hover rounded-2xl border border-slate-200 bg-white p-6 shadow-card ${a.bar} ${a.hover}`}
                 >
-                  <span
-                    className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-white shadow-sm ${a.icon}`}
+                  <div
+                    className={`flex h-11 w-11 items-center justify-center rounded-xl text-white shadow-sm ${a.icon}`}
                   >
                     <CheckIcon className="h-5 w-5" />
-                  </span>
-                  <div>
-                    <h3 className="text-base font-bold text-slate-900">
-                      {p.title}
-                    </h3>
-                    <p className="mt-1.5 text-sm leading-relaxed text-slate-600">
-                      {p.text}
-                    </p>
                   </div>
+                  <h3 className="mt-4 text-base font-bold text-slate-900">
+                    {item.title}
+                  </h3>
+                  <p className="mt-2 text-sm leading-relaxed text-slate-600">
+                    {item.text}
+                  </p>
                 </Reveal>
               );
             })}

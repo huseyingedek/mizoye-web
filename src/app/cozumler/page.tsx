@@ -12,12 +12,8 @@ import { accentOf, type Accent } from "@/lib/accents";
 import {
   CheckIcon,
   ArrowRightIcon,
-  BuildingIcon,
-  CloudIcon,
   AiIcon,
 } from "@/components/Icons";
-
-const erpIcons = [BuildingIcon, CloudIcon];
 
 type Item = { title: string; text: string; features: readonly string[] };
 
@@ -100,32 +96,6 @@ export default function SolutionsPage() {
                 item={item}
                 Icon={productIcons[i] ?? productIcons[0]}
                 accent={accentOf(i)}
-                featured
-                delay={i * 100}
-              />
-            ))}
-          </div>
-        </Container>
-      </section>
-
-      {/* Kurumsal ERP Çözümleri */}
-      <section className="py-16 sm:py-20">
-        <Container>
-          <Reveal>
-            <SectionHeading
-              align="left"
-              badge={t.solutions.badge}
-              title={t.solutions.erpTitle}
-              subtitle={t.solutions.erpSubtitle}
-            />
-          </Reveal>
-          <div className="mt-12 grid gap-6 md:grid-cols-2">
-            {t.solutions.erp.map((item, i) => (
-              <OfferingCard
-                key={item.title}
-                item={item}
-                Icon={erpIcons[i] ?? erpIcons[0]}
-                accent={accentOf(i + 4)}
                 featured
                 delay={i * 100}
               />
