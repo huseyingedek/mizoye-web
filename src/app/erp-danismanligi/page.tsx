@@ -11,14 +11,9 @@ import { accentOf } from "@/lib/accents";
 import {
   BuildingIcon,
   CloudIcon,
-  IdeaIcon,
-  RouteIcon,
-  ShieldIcon,
   CheckIcon,
   ArrowRightIcon,
 } from "@/components/Icons";
-
-const serviceIcons = [BuildingIcon, IdeaIcon, RouteIcon, ShieldIcon];
 
 export default function ErpConsultingPage() {
   const { t } = useLanguage();
@@ -159,46 +154,6 @@ export default function ErpConsultingPage() {
             </ul>
           </Reveal>
 
-        </Container>
-      </section>
-
-      {/* Sunduğumuz Hizmetler */}
-      <section className="bg-hero-mesh py-16 sm:py-20">
-        <Container>
-          <Reveal>
-            <SectionHeading
-              align="left"
-              title={e.services.title}
-              subtitle={e.services.subtitle}
-            />
-          </Reveal>
-          <div className="mt-12 grid gap-6 md:grid-cols-2">
-            {e.services.items.map((item, i) => {
-              const a = accentOf(i);
-              const Icon = serviceIcons[i] ?? serviceIcons[0];
-              return (
-                <Reveal
-                  key={item.title}
-                  delay={(i % 2) * 100}
-                  className={`card-hover flex gap-5 rounded-2xl border border-slate-200 bg-white p-7 shadow-card ${a.bar} ${a.hover}`}
-                >
-                  <div
-                    className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-xl text-white shadow-sm ${a.icon}`}
-                  >
-                    <Icon className="h-6 w-6" />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-bold text-slate-900">
-                      {item.title}
-                    </h3>
-                    <p className="mt-2 text-sm leading-relaxed text-slate-600">
-                      {item.text}
-                    </p>
-                  </div>
-                </Reveal>
-              );
-            })}
-          </div>
         </Container>
       </section>
 

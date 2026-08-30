@@ -46,7 +46,7 @@ export default function Navbar() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`whitespace-nowrap rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
+                className={`whitespace-nowrap rounded-lg px-2.5 py-2 text-sm font-medium transition-colors ${
                   active
                     ? "text-brand-700"
                     : "text-slate-600 hover:text-brand-700"
