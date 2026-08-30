@@ -2,6 +2,7 @@ import type { ComponentType, SVGProps } from "react";
 import {
   DocCheckIcon,
   BoxIcon,
+  ShieldIcon,
   CodeIcon,
   MobileIcon,
   IdeaIcon,
@@ -11,7 +12,7 @@ import {
 type Icon = ComponentType<SVGProps<SVGSVGElement>>;
 
 // Yazılım ürünleri sırasıyla eşleşen ikonlar.
-export const productIcons: Icon[] = [DocCheckIcon, BoxIcon];
+export const productIcons: Icon[] = [DocCheckIcon, BoxIcon, ShieldIcon];
 
 // Hizmetler sırasıyla eşleşen ikonlar.
 export const serviceIcons: Icon[] = [

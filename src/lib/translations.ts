@@ -207,6 +207,16 @@ export const translations = {
             "Sevkiyat ve envanter takibi",
           ],
         },
+        {
+          title: "İK İzin ve Zimmet Yönetimi",
+          text: "Personel izin taleplerinden onay süreçlerine, zimmetli demirbaş ve ekipman takibinden teslim/iade kayıtlarına kadar insan kaynakları operasyonlarınızı tek yazılımda dijitalleştirin.",
+          features: [
+            "İzin talebi ve onay akışı",
+            "Zimmet (demirbaş/ekipman) takibi",
+            "Teslim & iade kayıtları",
+            "Personel bazlı raporlama",
+          ],
+        },
       ],
       servicesTitle: "Hizmetlerimiz",
       servicesSubtitle: "Yazılım geliştirmeden danışmanlığa, dijital dönüşümünüzün her adımında yanınızdayız.",
@@ -657,6 +667,16 @@ export const translations = {
             "Stock and shelf management",
             "Barcode inbound/outbound",
             "Shipping and inventory tracking",
+          ],
+        },
+        {
+          title: "HR Leave & Asset Management",
+          text: "Digitize your HR operations in a single application — from staff leave requests and approval flows to tracking assigned assets and equipment, and delivery/return records.",
+          features: [
+            "Leave requests & approval flow",
+            "Asset (fixtures/equipment) tracking",
+            "Delivery & return records",
+            "Per-employee reporting",
           ],
         },
       ],
