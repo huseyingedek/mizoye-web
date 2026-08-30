@@ -12,9 +12,6 @@ import {
   MapPinIcon,
   ClockIcon,
   LinkedInIcon,
-  TwitterIcon,
-  InstagramIcon,
-  GithubIcon,
 } from "@/components/Icons";
 
 export default function ContactPage() {
@@ -49,9 +46,6 @@ export default function ContactPage() {
 
   const socials = [
     { href: siteConfig.social.linkedin, label: "LinkedIn", Icon: LinkedInIcon },
-    { href: siteConfig.social.twitter, label: "X", Icon: TwitterIcon },
-    { href: siteConfig.social.instagram, label: "Instagram", Icon: InstagramIcon },
-    { href: siteConfig.social.github, label: "GitHub", Icon: GithubIcon },
   ];
 
   return (

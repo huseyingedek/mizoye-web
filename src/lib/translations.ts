@@ -120,6 +120,7 @@ export const translations = {
         "Ambalaj",
         "Otomotiv",
         "Makine",
+        "Perakende",
         "Üretim & Sanayi",
       ],
       faqTitle: "Sıkça sorulan sorular",
@@ -251,6 +252,7 @@ export const translations = {
         { title: "Ambalaj", text: "Reçete, üretim planlama ve sevkiyat yönetimi." },
         { title: "Otomotiv", text: "Tedarik, yan sanayi ve kalite süreçleri için çözümler." },
         { title: "Makine", text: "Proje bazlı üretim, servis ve bakım takibi." },
+        { title: "Perakende & Mağaza Yönetimi", text: "Mağaza operasyonları, POS, stok ve çok şubeli satış süreçleri için uçtan uca çözümler." },
       ],
     },
     ai: {
@@ -582,6 +584,7 @@ export const translations = {
         "Packaging",
         "Automotive",
         "Machinery",
+        "Retail",
         "Manufacturing & Industry",
       ],
       faqTitle: "Frequently asked questions",
@@ -713,6 +716,7 @@ export const translations = {
         { title: "Packaging", text: "Recipes, production planning and shipping management." },
         { title: "Automotive", text: "Solutions for supply, sub-industry and quality processes." },
         { title: "Machinery", text: "Project-based production, service and maintenance tracking." },
+        { title: "Retail & Store Management", text: "End-to-end solutions for store operations, POS, stock and multi-branch sales processes." },
       ],
     },
     ai: {

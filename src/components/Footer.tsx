@@ -7,9 +7,6 @@ import Container from "./Container";
 import Logo from "./Logo";
 import {
   LinkedInIcon,
-  TwitterIcon,
-  InstagramIcon,
-  GithubIcon,
   MailIcon,
   PhoneIcon,
   MapPinIcon,
@@ -22,9 +19,6 @@ export default function Footer() {
 
   const socials = [
     { href: siteConfig.social.linkedin, label: "LinkedIn", Icon: LinkedInIcon },
-    { href: siteConfig.social.twitter, label: "X", Icon: TwitterIcon },
-    { href: siteConfig.social.instagram, label: "Instagram", Icon: InstagramIcon },
-    { href: siteConfig.social.github, label: "GitHub", Icon: GithubIcon },
   ];
 
   return (
