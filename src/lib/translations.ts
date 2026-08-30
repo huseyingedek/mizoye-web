@@ -417,7 +417,6 @@ export const translations = {
           "İnsan Kaynakları",
           "Raporlama & İş Zekası",
         ],
-        partnerNote: "canias, Odoo, Liox ve IFS'te partner firmalarımızla ortak çalışıyoruz; ERP seçiminizde bu platformlardan biri öne çıkarsa süreci birlikte yürütüyoruz.",
       },
       services: {
         title: "Sunduğumuz Hizmetler",
@@ -884,7 +883,6 @@ export const translations = {
           "Human Resources",
           "Reporting & Business Intelligence",
         ],
-        partnerNote: "We work together with our partner firms on canias, Odoo, Liox and IFS; if one of these platforms stands out in your ERP selection, we run the process with you.",
       },
       services: {
         title: "The Services We Offer",

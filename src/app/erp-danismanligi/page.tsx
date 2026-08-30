@@ -159,15 +159,6 @@ export default function ErpConsultingPage() {
             </ul>
           </Reveal>
 
-          {/* Partner notu */}
-          <Reveal className="mt-6 flex items-start gap-4 rounded-2xl border border-brand-100 bg-brand-50/60 p-6">
-            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-brand-500 to-brand-700 text-white shadow-sm">
-              <BuildingIcon className="h-5 w-5" />
-            </span>
-            <p className="text-sm leading-relaxed text-slate-700">
-              {e.expertise.partnerNote}
-            </p>
-          </Reveal>
         </Container>
       </section>
 
