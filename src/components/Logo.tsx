@@ -2,7 +2,7 @@ import Image from "next/image";
 
 /**
  * Mizoye logosu — orijinal logo dosyası (public/logoo.jpeg) arka planı temizlenip
- * public/logo.png (şeffaf) olarak kullanılır. Böylece birebir gerçek logo görünür.
+ * public/mizlogo.png (şeffaf) olarak kullanılır. Böylece birebir gerçek logo görünür.
  * Koyu zeminlerde (footer) beyaz bir kutu içinde gösterilir (bkz. Footer).
  */
 export default function Logo({
@@ -13,7 +13,7 @@ export default function Logo({
 }) {
   return (
     <Image
-      src="/logo.png"
+      src="/mizlogo.png"
       alt="Mizoye"
       width={900}
       height={353}
